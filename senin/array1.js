@@ -1,12 +1,13 @@
-//exercises 2 
-function balikString(kata) {
-    var hasil =''
-    var a = kata.length
-    var b = a[0].length
-    for (var i=b-1;i>0;i++){
-        hasil += b[i]
+// exercises 2 
+
+var input=['Hello world!','im ericsudhartio']
+console.log(balikString(input))
+function balikString(input) {
+    var kata = input[0]
+    var hasil = ''
+    for(var i=kata.length-1;i>=0;i--){
+        hasil += kata[i]
     }
     return hasil
 }
 
-console.log(balikString('Hello world!'))

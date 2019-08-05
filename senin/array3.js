@@ -1,9 +1,14 @@
-function dataHandling2 (nomor,nama,kota,ttl,hobi) {
-    var hasil =''
-    nama.slice('Elsharawy')
-    kota.slice('Provinsi')
 
-    return hasil = nomor + nama + kota + ttl + hobi
+// console.log(output)
+
+function dataHandling2 (input) {
+    var nomor = dataHandling2[0]
+    var nama = dataHandling2[1]
+    var kota = dataHandling2[2]
+    var tanggal = dataHandling2[3]
+    var hobi = dataHandling2[4]
+    return hasil = nomor + nama + ' elsharawy' + ' Provinsi ' +kota
 }
 
-console.log(dataHandling2 ('0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca'))
+var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
+dataHandling2(input);
