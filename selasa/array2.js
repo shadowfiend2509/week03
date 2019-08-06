@@ -8,9 +8,13 @@ function dataHandling (input) {
     return hasil = dataHandling[0] + '\n' + dataHandling[1] + '\n' + dataHandling[2] + '\n' + dataHandling[3] + '\n' + dataHandling[4] + '\n'
 }
 
-// console.log(dataHandling('0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca'))
-// console.log(dataHandling('0002','Dika Sembiring','Medan','10/10/1992','Bermain Gitar'))
-// console.log(dataHandling('0003','Winona','indonesia','25/12/1965','Memasak'))
-// console.log(dataHandling('0004','Bintang Senjaya','Martapura','6/4/1970','Berkebun'))
+var input = ['0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca']
+console.log(dataHandling(input))
+var input = ['0002','Dika Sembiring','Medan','10/10/1992','Bermain Gitar']
+console.log(dataHandling(input))
+var input = ['0003','Winona','indonesia','25/12/1965','Memasak']
+console.log(dataHandling(input))
+var input = ['0004','Bintang Senjaya','Martapura','6/4/1970','Berkebun']
+console.log(dataHandling(input))
 var input = ['0005','Eric Sudhartio','Palembang','25/09/1994','Coding']
 console.log(dataHandling(input))
