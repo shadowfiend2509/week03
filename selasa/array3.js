@@ -42,12 +42,16 @@ function dataHandling2 (input) {
         case '11': namabulan= ' November ' ;break;
         case '12': namabulan= ' Desember ' ;break;
     }
+
+    //pengurutan discending
+
     console.log(namabulan)
     var sort = arrdate.sort(function(){
         return tahun
     })
     console.log(sort)
 
+    //tanggal dengan pergantian dari '/' menjadi '-'
 
     var update=dateee.split('/')
     var joinupdate = update.join('-')
