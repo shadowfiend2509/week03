@@ -29,7 +29,7 @@ function palindrome(kata){  //sama dengan palindrome huruf
   console.log(angkaPalindrome(10)); // 11
   console.log(angkaPalindrome(117)); // 121
   console.log(angkaPalindrome(175)); // 181
-  console.log(angkaPalindrome(1001)); // 1001
+  console.log(angkaPalindrome(1000)); // 1001
 
 
 
