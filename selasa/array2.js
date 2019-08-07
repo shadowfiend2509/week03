@@ -5,7 +5,7 @@ function dataHandling (input) {
     dataHandling[3]= ' TTL : '+input[3]
     dataHandling[4]= ' Hobbi :'+input[4]
 
-    return hasil = dataHandling[0] + '\n' + dataHandling[1] + '\n' + dataHandling[2] + '\n' + dataHandling[3] + '\n' + dataHandling[4] + '\n'
+    return hasil = dataHandling[0] + '\n' + dataHandling[1] + '\n' + dataHandling[2] + '\n' + dataHandling[3] + '\n' + dataHandling[4] +'\n'
 }
 
 var input = ['0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca']
