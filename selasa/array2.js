@@ -1,20 +1,24 @@
-function dataHandling (input) {
-    dataHandling[0]= ' Nomor ID : '+ input[0]
-    dataHandling[1]= ' Nama Lengkap : '+input[1]
-    dataHandling[2]= ' Kota : '+input[2]
-    dataHandling[3]= ' TTL : '+input[3]
-    dataHandling[4]= ' Hobbi :'+input[4]
-
-    return hasil = dataHandling[0] + '\n' + dataHandling[1] + '\n' + dataHandling[2] + '\n' + dataHandling[3] + '\n' + dataHandling[4] +'\n'
+function dataHandling(input){
+    
+    return perulangan(input)
+}
+function perulangan(ulang){
+    var hasil = ''
+    for( var i=0;i<input.length;i++) {
+        hasil += 'Nomor ID: '+input[i][0]+'\n'+'Nama Lengkap: '+input[i][1]+'\n'+
+        'TTL: '+input[i][2] +' '+ input[i][3] + '\n' + 'Hobi: '+input[i][4]+'\n'+'\n'
+    }
+    return hasil
 }
 
-var input = ['0001','Roman Alamsyah','Bandar Lampung','21/05/1989','Membaca']
-console.log(dataHandling(input))
-var input = ['0002','Dika Sembiring','Medan','10/10/1992','Bermain Gitar']
-console.log(dataHandling(input))
-var input = ['0003','Winona','indonesia','25/12/1965','Memasak']
-console.log(dataHandling(input))
-var input = ['0004','Bintang Senjaya','Martapura','6/4/1970','Berkebun']
-console.log(dataHandling(input))
-var input = ['0005','Eric Sudhartio','Palembang','25/09/1994','Coding']
+
+
+
+var input = [
+    ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+    ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+    ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+    ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+]
+
 console.log(dataHandling(input))
