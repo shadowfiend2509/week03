@@ -37,9 +37,9 @@ function targetTerdekat(arr) {
             break
         }
     }else{
-        hasil=0
+        hasil.push(0)
     }
-    return hasil.toString()
+    return hasil
 
 }    
 
