@@ -5,45 +5,43 @@
 
 
 
+//   ['o', '', '', '', 'x'] //4
+
+//   ['x', '', 'o'] //2
+
+//   cari o ==> 
+//   kalo bukan x => langkah+1 lanjut
+//   kalo x langkah+1 STOP
+
+
 
 
 function targetTerdekat(arr) {
-    
-    const something = arr.includes('x','o')
-    var hasilarr = []
-    var hasilsomething = []
-    if(something==true){
-        for(var i=0;i<arr.length;i++){
-            if(arr[i]==='x'/*||arr[i]==='o'*/){
-                hasilarr.push(arr[i])
-                hasilsomething.push(i)
-                break
-            }
-        }
-        for(var y=0;y<arr.length;y++){
-                if(arr[y]==='o'){
-                    hasilarr.push(arr[y])
-                    hasilsomething.push(y)
-                    // break
-                }
-            }
-        }else{
-        hasilsomething = 0
-        }
-    var total = 0
-    if(hasilsomething[0]>hasilsomething[1]){
-        total = hasilsomething[0]-hasilsomething[1]
-    }else if(hasilsomething[0]<hasilsomething[1]){
-        total = hasilsomething[1]-hasilsomething[0]
-    }else{
-        total = 0
-    }
-    // var revshasilsomething = hasilsomething.reverse()
-    return total
-    // console.log(hasilarr)
-    // return hasilsomething
+    var hasilo = []
+    var hasil = []
+    var hasilx = []
 
-}
+    for(var i = 0 ; i<arr.length ; i++ ){
+        if(arr[i]==='o'){
+            hasilo.push(i)
+        }else if(arr[i]==='x'){
+            hasilx.push(i) 
+        }
+    }
+
+    if(hasilo<hasilx[0]){
+        hasil.push(hasilx[0]-hasilo)
+    }else if(hasilo>hasilx[0]){
+        for( var a=hasilx.length-1;a>=0;a--){
+            hasil.push(hasilo-hasilx[a])
+            break
+        }
+    }else{
+        hasil=0
+    }
+    return hasil.toString()
+
+}    
 
   
   // TEST CASES
@@ -53,5 +51,5 @@ function targetTerdekat(arr) {
   console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0
   console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
 
-
+  
 
