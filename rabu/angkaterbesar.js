@@ -9,7 +9,10 @@ function pasanganTerbesar(num){
     hasilarr.sort(function(a,b){
         return a<b
     })
-    return hasilarr[0]
+
+    
+    //perbaikan outpun menjadi Number
+    return Number(hasilarr[0])
 }
 
 

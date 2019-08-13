@@ -5,18 +5,14 @@ function tentukanDeretAritmatika(angka) {
     for( var i=angka.length-1 ;i>0;i--) {
         selisih.push(angka[i]-angka[i-1])
     }
-
-
+    //coba di persingkat
     for( var x=0;x<selisih.length;x++){
       if(selisih[x]!==cariMean(selisih)){
           return false
       }
-      
   }
   return true
-
 }
-
 function cariMean(arr) {  // hasil rata2 dari array 
   var hasil = 0
   for(var i=0;i<arr.length;i++){

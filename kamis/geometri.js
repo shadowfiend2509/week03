@@ -4,28 +4,23 @@ function tentukanDeretGeometri(arr) {
     for(var b=0;b<tentukanDeretAritmatika(arr).length;b++) {
         hasil += tentukanDeretAritmatika(arr)[b]/tentukanDeretAritmatika(arr).length
     }
-
-    // return tentukanDeretAritmatika(arr)
-    // return hasil
     for(var i=0;i<tentukanDeretAritmatika(arr).length;i++){
         if(tentukanDeretAritmatika(arr)[i]!==hasil) {
             return false
         }
     }
     return true
-
   }
-  
+
   function tentukanDeretAritmatika(arr) {
     var hasilbagi = []
     for(var i=arr.length-1 ; i>0 ; i--) {
         hasilbagi.push(arr[i]/arr[i-1])
     }
     return hasilbagi
-
   }
 
-
+//disederhanakan
 
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true

@@ -39,7 +39,8 @@ function targetTerdekat(arr) {
     }else{
         hasil.push(0)
     }
-    return hasil
+    //output berupa number
+    return Number(hasil)
 
 }    
 
